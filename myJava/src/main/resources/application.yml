@@ -1,3 +1,18 @@
 server:
-  # 端口
   port: 6001
+
+#datasource
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///easydb?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+
+  #mybatis
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+  mapper-locations:  classpath:mapper/*.xml
+  type-aliases-package: guo.entity

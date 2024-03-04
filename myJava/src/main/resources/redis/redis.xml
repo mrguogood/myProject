@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--相当于有文件说明-->
+<!--  xmlns就是xml nameSpace的缩写，即xml的命名空间
+     使用语法:xmlns:namespace-prefix="namespaceURI",其中,namespace-prefix为自定义前缀，
+     只要这个xml文档中保证前缀不重复即可；namespaceURI是这个前缀对应的XML Namespace的定义
+     下面一行只是设置前缀为空，并且后面的前缀没有为空的满足要求,该文档默认的
+     XML Namespace为http://www.springframework.org/schema/beans,
+     对于默认的Namespace元素，可以不使用前缀-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!---component-scan标签用于扫描指定包-->
+	<context:component-scan base-package="com.alibaba.fastjson.annotation" />
+
+	<!---配置节点用于向Spring容器中注册-->
+	<context:annotation-config/>
+
+	<!---默认的namespace，可以不加前缀-->
+	<bean id="poolConfig" >
+
+	</bean>
+
+
+</beans>
