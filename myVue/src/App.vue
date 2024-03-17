@@ -1,16 +1,9 @@
 <template>
-     <div>
-         <h1>从现在开始</h1>
-     </div>
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
 
+<script setup lang="ts"></script>
 
-<script>
-
-
-</script>
-
-
-<style>
-
-</style>
+<style scoped></style>
