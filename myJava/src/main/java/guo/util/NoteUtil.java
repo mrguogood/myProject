@@ -56,6 +56,4 @@ public class NoteUtil {
                                                        @RequestParam(value = "file", required = false) MultipartFile[] files) {
 
     }
-
-   // 验证git回滚的测试Mixed
 }
